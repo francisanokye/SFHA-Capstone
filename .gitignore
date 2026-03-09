@@ -19,11 +19,11 @@ input/
 *.csv
 
 # Outputs and models (regenerate with runner)
-output/*.png
-models/*.joblib
+#utput/*.png
+#odels/*.joblib
 models/*.keras
 models/*.txt
-models/metadata.json
+#odels/metadata.json
 
 # Jupyter
 .ipynb_checkpoints/

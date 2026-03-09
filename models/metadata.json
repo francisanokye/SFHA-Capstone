@@ -1,0 +1,18 @@
+{
+  "topic_codes": {
+    "r/addiction": 0,
+    "r/adhd": 1,
+    "r/alcoholism": 2,
+    "r/bipolarreddit": 3,
+    "r/depression": 4,
+    "r/divorce": 5
+  },
+  "topic_labels": [
+    "addiction",
+    "adhd",
+    "alcoholism",
+    "bipolarreddit",
+    "depression",
+    "divorce"
+  ]
+}
