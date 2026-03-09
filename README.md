@@ -86,6 +86,12 @@ After training on the balanced dataset of six classes, the pipeline reports metr
 
 Overall validation accuracy (macro and weighted averages) is approximately **0.81**, as reported by the Logistic Regression classification report.
 
+**Multiclass ROC curve (Logistic Regression – OvR):**
+
+The figure below shows one-vs-rest ROC curves for each class and the micro-average ROC, generated from the validation set and saved automatically by `runner.py`:
+
+![Logistic Regression ROC curves (one-vs-rest)](output/lgreg_roc.png)
+
 ---
 
 ## Project Structure
