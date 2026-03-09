@@ -204,6 +204,20 @@ BibTeX:
 
 This implementation adapts and extends their Reddit mental-health mapping approach into a reusable, end-to-end classification pipeline.
 
+You can download the processed subreddit CSVs used in that work from Zenodo:  
+`https://zenodo.org/records/3941387`
+
+For this project, the key files (per-subreddit, TF-IDF feature CSVs) are:
+
+- `addiction_pre_features_tfidf_256.csv`  
+- `alcoholism_pre_features_tfidf_256.csv`  
+- `adhd_pre_features_tfidf_256.csv`  
+- `bipolarreddit_pre_features_tfidf_256.csv`  
+- `depression_pre_features_tfidf_256.csv`  
+- `divorce_pre_features_tfidf_256.csv`  
+
+Place these files into the `data/` folder (or your chosen `DATA_FOLDER`) before running the pipeline.
+
 ---
 
 ## How to Run the Code
