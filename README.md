@@ -168,17 +168,6 @@ SFHA-Capstone/
 
 ---
 
-## Data folder (`data/`)
-
-All CSV data lives in the **`data/`** folder. **`data.py`** merges every CSV in this folder into one DataFrame, then cleans text, maps subreddits to mental-health labels, and balances categories.
-
-- **Place CSV files in `data/`.** Each file must have at least the first four columns: **subreddit**, **author**, **date**, **post** (or equivalent). Only subreddits in `config.MENTAL_HEALTH_SUBREDDITS` are kept; others are dropped. Categories are balanced to the size of the smallest.
-- **Optional – Fetch from Reddit:** Set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`, then run `python fetch_subreddit_data.py`. This writes **`data/reddit_corpus.csv`**, which is merged with any other CSVs when you run the pipeline.
-
-Override the data folder with the environment variable `DATA_FOLDER` or `runner.py --data-folder PATH`.
-
----
-
 ## Data source and citation
 
 The original subreddit-level dataset and mental-health support group definitions are based on:
@@ -216,7 +205,10 @@ For this project, the key files (per-subreddit, TF-IDF feature CSVs) are:
 - `depression_pre_features_tfidf_256.csv`  
 - `divorce_pre_features_tfidf_256.csv`  
 
-Place these files into the `data/` folder (or your chosen `DATA_FOLDER`) before running the pipeline.
+Place these files into the `data/` folder (or your chosen `DATA_FOLDER`) before running the pipeline. **`data.py`** merges every CSV in this folder into one DataFrame, then cleans text, maps subreddits to mental-health labels, and balances categories.
+
+- Each file must have at least the first four columns: **subreddit**, **author**, **date**, **post** (or equivalent). Only subreddits in `config.MENTAL_HEALTH_SUBREDDITS` are kept; others are dropped. Categories are balanced to the size of the smallest.
+- **Optional – Fetch from Reddit:** Set `REDDIT_CLIENT_ID` and `REDDIT_CLIENT_SECRET`, then run `python fetch_subreddit_data.py`. This writes **`data/reddit_corpus.csv`**, which is merged with any other CSVs when you run the pipeline.
 
 ---
 
