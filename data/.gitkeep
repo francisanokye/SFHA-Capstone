@@ -1,0 +1,3 @@
+# Place CSV data here.
+# data.py merges all *.csv files (first 4 cols: subreddit, author, date, post),
+# then cleans text and balances categories. Run: python runner.py
