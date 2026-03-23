@@ -1,4 +1,4 @@
-# SFHA Capstone: Reddit Mental-Health Topic Classification
+# Reddit Mental-Health Topic Classification
 
 A supervised text-classification pipeline that assigns Reddit posts to one of six social–mental health categories addiction, alcoholism, ADHD, bipolar disorder, depression, and divorce using machine-learning workflow from data loading and preprocessing through training, evaluation, and inference.
 
